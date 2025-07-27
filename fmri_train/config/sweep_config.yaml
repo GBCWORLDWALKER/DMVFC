@@ -1,0 +1,9 @@
+# sweep_config.yaml
+method: grid
+program: src/DFC_multi_v2_bundle/sweep_launcher.py
+metric:
+  name: alpha
+  goal: minimize
+parameters:
+  bun
+

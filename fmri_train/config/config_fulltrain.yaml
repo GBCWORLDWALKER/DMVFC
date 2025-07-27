@@ -1,0 +1,6 @@
+project: BOLD_DFC_full_train
+program: src/DFC_multi_v2_bundle/sweep_launcher_baseline.py
+method: grid
+parameters:
+  bundle:
+    values: [[CST_right,11],[AF_left,11],[AF_right,11]]

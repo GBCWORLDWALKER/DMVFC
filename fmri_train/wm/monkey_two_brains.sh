@@ -1,0 +1,39 @@
+basefolder=/mnt/data0/fan/SWM-DFC/data/Monkey-both-ROI/
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_fiber_selection.py \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere/ROI
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_cluster_statics_two_brains.py \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere/ROI \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere_stats.csv
+
+
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_fiber_selection.py \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere/ROI
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_cluster_statics_two_brains.py \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere/ROI \
+$basefolder/BMAR_Edisep_Ldisep/DFC_BMAR_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere_stats.csv
+
+
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_fiber_selection.py \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere/ROI
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_cluster_statics_two_brains.py \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere/ROI \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_left_hemisphere_stats.csv
+
+
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_fiber_selection.py \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere/ROI
+
+$1 python /home/fan/Projects/SWM_DFC/wm/wm_cluster_statics_two_brains.py \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere/ROI \
+$basefolder/BMFA_Edisep_Ldisep/DFC_BMFA_Edisep_Ldisep_DGCNN_001_EmbEPTrue_CluEPTrue_gamma1.0_ro1_k100/separated/tracts_right_hemisphere_stats.csv

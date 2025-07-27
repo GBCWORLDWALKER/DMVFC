@@ -1,0 +1,32 @@
+inputDirectory: "/data06/jinwang/journal_2024/data/processed_data/tractseg_MNI_vox_fMRI_vtk/train"
+outputDirectory: "/data06/jinwang/journal_2024/output"
+numberOfFiberPoints: 25
+epochs_pretrain: 450
+epochs: 20
+pretrain: False
+dataset_prepared: True
+full_brain: False
+fmri_path: "/data06/jinwang/journal_2024/data/processed_data/SLF_I_left.tck/train"
+fmri_similarity_path: "/data06/jinwang/journal_2024/data/processed_data/fmri_correlation/SLF_I_left"
+dmri_similarity_path: "/data06/jinwang/isbi/data/bundle_full/dmri_distance_output"
+strategy_initial: 2
+loss_strategy: 2
+GPU: [1,0]
+pretrained_net_a: "/data06/jinwang/isbi/data/bundle_full/out_full_train/models/SLF_I_left_baseline_final_k18.pt"
+pretrained_net_b: "/data06/jinwang/journal_2024/output/03_17_17_46_35_SLF_I_left_sim_scale_100_dgcnn/output/models/SLF_I_left_sim_scale_100_dgcnn_pretrain_b_k18.pt"
+bundle: "SLF_I_left"
+num_clusters: 18
+
+index_pair_path: "/data06/jinwang/journal_2024/data/processed_data/index_pair_bundle.pt"
+adj_matrix_path: "/data06/jinwang/isbi/src/DFC_multi_v3_bundle/test/coor_all.pt"
+epochs_mapping: 450
+data_parallel: True
+batch_size: 512
+lambda_a: 1
+lambda_b: 0.1
+model_b: "dgcnn"
+mapping: False
+demo: False
+output_name: "SLF_I_left_dgcnn_finetune"
+# nohup python /data06/jinwang/isbi/src/st_gcn_parallel_common_space/train_bilateral_Fan_bundle_fmri_origin.py --config /data06/jinwang/isbi/src/st_gcn_parallel_common_space/config/trained.yaml > /data06/jinwang/isbi/logs/SLF_I_left_finetune 2>&1 &
+  

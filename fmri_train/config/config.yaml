@@ -1,0 +1,20 @@
+# config.yaml
+inputDirectory: "/data06/jinwang/isbi/data/full_brain/train_dfc"
+outputDirectory: "/data06/jinwang/isbi/data/full_brain/test_dfc_out"
+fmri_path: "/data06/jinwang/isbi/data/full_brain/allbrain_fmri_distance_train"
+numberOfFiberPoints: 25
+num_clusters: 800
+epochs_pretrain: 350
+loss_surf: false
+embedding_surf: false
+pretrain: True
+dataset_prepared: false
+single_prepared: true
+full_brain: true
+funct: true
+epochs: 10
+# Additional parameters for testing
+testInputDirectory: "/data06/jinwang/isbi/data/full_brain/test_dfc"
+testOutputDirectory: "/data06/jinwang/isbi/data/full_brain/test_dfc_out"
+
+

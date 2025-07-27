@@ -1,0 +1,6 @@
+project: BOLD_DFC_latest
+program: src/DFC_multi_v2_bundle/sweep_launcher_latest.py
+method: grid
+parameters:
+  bundle:
+    values: [[CST_right,11,"022",CST_right_full_train_pretrain_a_k11.pt],[AF_left,11,"023",AF_left_full_train_pretrain_a_k11.pt],[AF_right,11,"024",AF_right_full_train_pretrain_a_k11.pt],[CC_4,6,"025",DGCNN_012_pretrain_a_k6.pt],[CC_5,5,"026",DGCNN_013_pretrain_a_k5.pt]]

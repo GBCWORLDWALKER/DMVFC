@@ -1,0 +1,25 @@
+inputDirectory: "/data06/jinwang/journal_2024/data/processed_data/tractseg_MNI_vox_fMRI_vtk/train"
+outputDirectory: "/data06/jinwang/journal_2024/output"
+numberOfFiberPoints: 25
+epochs_pretrain: 450
+epochs: 20
+pretrain: True
+dataset_prepared: True
+full_brain: False
+fmri_path: "/data06/jinwang/journal_2024/data/processed_data/SLF_II_right.tck/train"
+fmri_similarity_path: "/data06/jinwang/journal_2024/data/processed_data/fmri_correlation/SLF_II_right"
+dmri_similarity_path: "/data06/jinwang/isbi/data/bundle_full/dmri_distance"
+strategy_initial: 2
+loss_strategy: 2
+GPU: 0
+pretrained_net_a: "/data06/jinwang/isbi/data/bundle_full/out_full_train/models/CC_4_baseline_final_k6.pt"
+pretrained_net_b: "/data06/jinwang/isbi/data/processed_data/CC/out_801/models/fmri_original_single_CC_5_790_pretrain_k5.pt"
+bundle: "SLF_II_right"
+num_clusters: 12
+output_name: "SLF_II_right"
+index_pair_path: "/data06/jinwang/journal_2024/data/processed_data/index_pair_bundle.pt"
+adj_matrix_path: "/data06/jinwang/isbi/src/DFC_multi_v3_bundle/test/coor_all.pt"
+sim_scale: 100
+model_b: "dgcnn"
+#fmri_path,fmri_similarity_path,bundle,num_clusters,index_pair_path
+# nohup python /data06/jinwang/isbi/src/DFC_multi_v3_bundle/train_bilateral_Fan_bundle_fmri_origin.py --config /data06/jinwang/isbi/src/DFC_multi_v3_bundle/config/train.yaml > /data06/jinwang/isbi/logs/train_SLF_II_right_fmri 2>&1 &

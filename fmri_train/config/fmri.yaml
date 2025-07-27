@@ -1,0 +1,7 @@
+project: BOLD_DFC_fmri_origin
+program: src/DFC_multi_v2_bundle/sweep_launcher_latest.py
+method: grid
+parameters:
+  bundle:
+    values: [[CC_1,3],[CC_2,16],[CC_3,8],[CC_6,14],[CC_7,7]]
+    # values: [[SLF_I_left,18],[SLF_I_right,18],[SLF_II_left,12],[SLF_II_right,12],[SLF_III_right,5],[SLF_III_left,5]]
